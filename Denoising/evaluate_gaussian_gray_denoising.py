@@ -23,7 +23,7 @@ def proc(filename):
     # SSIM = utils.calculate_ssim(tar_img, prd_img)
     return PSNR
 
-parser = argparse.ArgumentParser(description='Gasusssian Grayscale Denoising using Restormer')
+parser = argparse.ArgumentParser(description='Gasussian Grayscale Denoising using Restormer')
 
 parser.add_argument('--model_type', required=True, choices=['non_blind','blind'], type=str, help='blind: single model to handle various noise levels. non_blind: separate model for each noise level.')
 parser.add_argument('--sigmas', default='15,25,50', type=str, help='Sigma values')
